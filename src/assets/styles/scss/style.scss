@@ -8,14 +8,19 @@ VERSION:	Versoin Number
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-
-@import 'variables';
+@import 'functions';
 
 @import 'mixins';
 
+@import 'variables';
+
+@import 'site-base';
+
+@import 'site-blocks';
+
 @import 'typography';
 
-@import 'buttons';
+@import 'components';
 
 @import 'common';
 
@@ -23,6 +28,6 @@ VERSION:	Versoin Number
 
 @import 'templates/slider';
 
-@import 'templates/homepage';
+//@import 'templates/homepage';
 
-@import 'templates/otherspage';
+//@import 'templates/otherpages';

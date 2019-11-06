@@ -1,9 +1,40 @@
 /*  typography */
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+//@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
-@font-face {
+/*@font-face {
   font-family: 'futura-bold';
   src: url('../fonts/Futura-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'gotham-thin';
+  src: url('../fonts/gotham/Gotham-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-regular';
+  src: url('../fonts/gotham/Gotham-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-book';
+  src: url('../fonts/gotham/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-medium';
+  src: url('../fonts/gotham/Gotham-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../fonts/gotham/Gotham-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
