@@ -1,8 +1,8 @@
 import Vue       from 'vue'
 import App       from './App.vue'
-import store     from './store'
+import { store } from './store'
 import VueRouter from 'vue-router'
-import Routes    from './router'
+import Routes    from './routes'
 
 import './assets/plugins/bootstrap/bootstrap.min.css'
 import './assets/plugins/slick/slick.css'
@@ -53,6 +53,7 @@ const router = new VueRouter({
       return { x: 0, y: 0 }
     }
   },
+  base: process.env.BASE_URL,
   // mode  : 'history'
 })
 Vue.use(VueRouter)
