@@ -1,14 +1,5 @@
 <template>
   <div class="home site-wrap">
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
     <!--<div class="top-bar py-3 bg-light" id="home-section">
       <div class="container">
         <div class="row">
@@ -34,56 +25,133 @@
 
     <nav-bar></nav-bar>
 
-    <carousel :autoPlay="true" :perPage="1" paginationActiveColor="#ff8700"
-              paginationColor="#fff212" :paginationPadding="5">
-      <slide class="text-center overflow-hidden">
-        <div class="site-blocks-cover overlay" v-background="`https://primaca.sirv.com/Images/ch/1.jpg?q=3`" data-aos="fade">
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
+    <section class="overlay">
+      <carousel :autoPlay="true" :perPage="1" :paginationEnabled="false"
+                :navigationEnabled="true" navigationNextLabel="" navigationPrevLabel="">
+        <slide class="overflow-hidden">
+          <div class="site-blocks-cover overlay" v-background="`/images/heroes/hero.jpg`">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
 
-              <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-12">
 
-                <div class="row mb-4">
-                  <div class="col-md-6">
-                    <h1>We Are The Best Consulting Agency</h1>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
-                      facere
-                      deleniti fuga officia.</p>
-                    <div>
-                      <a href="#" class="btn btn-primary mr-2 mb-2">Get Started</a>
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <h1>We Are The Best Agency</h1>
+                      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
+                        facere
+                        deleniti fuga officia.</p>
+                      <div>
+                        <a href="#" class="btn btn-underline mr-2 mb-2">Get Started</a>
+                      </div>
                     </div>
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </slide>
-    </carousel>
+        </slide>
+        <slide class="overflow-hidden">
+          <div class="site-blocks-cover overlay" v-background="`https://images.unsplash.com/photo-1508381592917-f70a660e413e?ixlib=rb-0.3.5&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&s=115aec28a10c8fd2de48b7a0b6e65479`">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
 
-    <div class="site-section" id="about-section">
-      <div class="container">
-        <div class="row align-items-lg-center">
-          <div class="col-md-6 mb-5 mb-lg-0 position-relative">
-            <img src="images/about_1.jpg" class="img-fluid" alt="Image">
-            <div class="experience">
-              <span class="year">50 years</span>
-              <span class="caption">of experience</span>
+                <div class="col-md-12">
+
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <h1>We Are The Best Consulting Agency</h1>
+                      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
+                        facere
+                        deleniti fuga officia.</p>
+                      <div>
+                        <a href="#" class="btn btn-underline mr-2 mb-2">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-5 ml-auto">
-            <h3 class="section-sub-title">About Us</h3>
-            <h2 class="section-title mb-3">Welcome To Consula</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil,
+        </slide>
+      </carousel>
+      <div></div>
+    </section>
+
+    <div class="site-section" id="">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-md-12 ml-auto text-center">
+            <h3 class="section-sub-title">Some Mini Title</h3>
+            <h2 class="section-title mb-3">Welcome To F Project</h2>
+            <p class="m+b-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil,
               consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero
               vel!</p>
-            <p><a href="#" class="btn btn-primary btn-black--hover">Learn More</a></p>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="site-section white-section bg-light" id="about-sectin">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-md-4">
+            <h3 class="section-sub-title">About Us</h3>
+            <h2 class="section-title mb-3">Who We Are</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><a href="#" class="btn btn-underline btn-black--hover">Learn More</a></p>
+          </div>
+          <div class="col-md-8 mb-5 mb-lg-0 position-relative text-right pl-lg-5">
+            <img src="/images/about/who-we-are.jpg" class="img-fluid" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="site-section border-bottom " id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">About Us</h3>
+            <h2 class="section-title mb-3">Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-autorenew"></span></div>
+              <div>
+                <h3>Business Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
+              <div>
+                <h3>Market Analysis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
+              <div>
+                <h3>User Monitoring</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="site-section border-bottom" id="team-section">
       <div class="container">
         <div class="row mb-5">
@@ -192,81 +260,6 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section border-bottom bg-light" id="services-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">Services</h3>
-            <h2 class="section-title mb-3">Our Services</h2>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-autorenew"></span></div>
-              <div>
-                <h3>Business Consulting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
-              <div>
-                <h3>Market Analysis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
-              <div>
-                <h3>User Monitoring</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div>
-              <div>
-                <h3>Insurance Consulting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div>
-              <div>
-                <h3>Financial Investment</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div>
-              <div>
-                <h3>Financial Management</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -586,10 +579,54 @@
 <script>
 // @ is an alias to /src
 
-import NavBar from '../components/Nav'
+import NavBar              from '../components/Nav'
+import { Slide, Carousel } from 'vue-carousel'
 
 export default {
   name      : 'home',
-  components: { NavBar }
+  components: { NavBar, Slide, Carousel }
 }
 </script>
+
+<style lang="scss">
+  @import "../assets/styles/scss/mixins/breakpoints";
+  .VueCarousel-navigation {
+    height: 40px;
+    width: 85%;
+    padding: 0 2%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+    top: unset !important;
+    transform: translateX(-50%);
+    left: 50%;
+
+    @include mobile{
+      width:auto;
+    }
+  }
+
+  .VueCarousel-navigation-button {
+    padding: 10px 10px;
+    height: 40px;
+    width: 55px;
+    border: 1px solid #ffa009;
+    z-index: 30;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    position: relative !important;
+  }
+  .VueCarousel-navigation-prev {
+    background-image: url('../assets/images/icons/fp-right-arrow.svg');
+    transform-origin: center;
+    transform: rotate(-180deg) !important;
+    background-position-x: right;
+  }
+  .VueCarousel-navigation-next {
+    background-image: url('../assets/images/icons/fp-right-arrow.svg');
+    transform: none !important;
+    background-position-x: right;
+  }
+  .VueCarousel-navigation--disabled {}
+</style>

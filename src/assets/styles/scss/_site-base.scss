@@ -133,6 +133,17 @@ h1, h2, h3, h4, h5,
 		padding: 4em 0;
 	}
 }
+.white-section{
+	background-color: white;
+	color: #000000;
+	.section-title, .section-sub-title, .btn{
+		color: #000000;
+	}
+
+	.btn-underline {
+		border-color: #000000;
+	}
+}
 
 .site-section-heading {
 	padding-bottom: 20px;

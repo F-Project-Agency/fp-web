@@ -125,3 +125,14 @@
     color: $white;
   }
 }
+
+.btn-underline {
+  font-family: gotham-medium, sans-serif;
+  background: transparent;
+  color: white;
+  //text-decoration: underline;
+  //text-underline-offset: 15px;
+  border-bottom: 1px solid $primary-color;
+  padding: 15px 0;
+  padding-bottom: 20px ;
+}

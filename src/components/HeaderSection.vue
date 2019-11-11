@@ -183,7 +183,7 @@ export default {
   height:0;
  }
  h2.section-title{
-  margin: auto;
-  margin-left: 10px;
+  /*margin: auto;*/
+  /*margin-left: 10px;*/
  }
 </style>
